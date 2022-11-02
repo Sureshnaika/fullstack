@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Assignment 2</title>
+<style>
+
+    h1,h3{
+        text-align: center;
+    }
+ form{
+    background-color:#CAF7B1 ;
+    
+ }
+   
+</style>
+</head>
+<body>
+<form action="POST">
+    <div style="width: 100%; height:150px; background-color:aqua;">
+     <h1>Form "A"</h1>
+     <h3>[See <a href="Tutorial_1.html" target="_blank">Regulation 2.1.1 </a>and <a href="www.google.com" target="_parent">Regulation2.1.7</a>]</h3>
+     <h3>Application for registration under Food Safety and Standards Act, 2006</h3>
+    </div>
+    <br>
+
+    <div>
+        <fieldset>
+        <legend style="color:red ;">Application Details</legend>
+        <label>Name of Applicant / Company</label>
+       <input type="text" name="name" style="margin-left: 200px;"   title="Please Enter Alphabets only" required>
+       <br><br>
+       <label>Designation:</label>
+        <input type="radio" name="Individual" value="Individual" style="margin-left:315px ;"><label>Individual</label>
+        <input type="radio" name="Partner" value="partner"><label>Partner</label>
+        <input type="radio" name="Partner" value="partner"><label>Proprieter</label>
+        <input type="radio" name="Partner" value="partner"><label>Secretary of dairy co-operative society</label>
+        <input type="radio" name="Partner" value="partner"><label>Other(s)</label>
+        <input type="reset" style="margin-left: 250px;">
+
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend style="color: red;"> Kind of Business</legend>
+        <label>Restuarants</label> <br><br>
+        <input type="checkbox" name="permanent" value="parmanent"> <label>Parmanent / Temporary Stall Holder</label>
+        <input type="checkbox" name="permanent" value="parmanent" style="margin-left: 220px;"> <label>Hawker (Itinerant / Mobile food vendor)</label>
+         <input type="checkbox" name="permanent" value="parmanent" style="margin-left:280px ;"> <label>Home based canteens . dabba wallas</label><br><br>
+
+        <input type="checkbox" name="permanent" value="parmanent"> <label>Petty retailer of snacks/tea shops</label>
+        <input type="checkbox" name="permanent" value="parmanent" style="margin-left:240px ;" > <label>Manufacturer/Processor</label>
+        <input type="checkbox" name="permanent" value="parmanent" style="margin-left:390px ;"> <label>Re packer</label> <br><br>
+
+        <input type="checkbox" name="permanent" value="parmanent"> <label>Food stalls/arrangements in religious gatherings, 
+                                                                           fairs etc</label>
+        <input type="checkbox" name="permanent" value="parmanent" style="margin-left:85px ;"> <label>Milk producers (who are not member of daily
+                                                    co operative society)/milk vendor</label>  
+        <input type="checkbox" name="permanent" value="parmanent" style="margin-left:30px ;"> <label>Dhaba</label> <br><br>   
+
+        <input type="checkbox" name="permanent" value="parmanent"> <label>Fish/meat/poultry/ shop/seller</label>
+        <input type="checkbox" name="permanent" value="parmanent" style="margin-left:260px ;"> <label>Other(s)</label>
+        <input type="checkbox" name="permanent" value="parmanent" style="margin-left:490px ;"> <label>Food Vending agencies</label>                                                             
+
+                        
+    </fieldset>
+
+    </div><br>
+    <div>
+
+<fieldset>
+
+<legend style="color: red;">  Address of Premises where food business is locaated</legend>
+<label> State:</label>
+<label style="margin-left:210px"> Tamil Nadu</label> <br><br>
+<label> Address:</label>
+<textarea style="margin-left:190px ;" required></textarea>
+<label style="margin-left:250px ;"> Sub-Division/Station/Dvision</label><br>
+<label style="margin-left:680px">(Railways):</label>
+<select name="select" style="margin-left: 200px;" required>
+    <option value=""> --Select Sub-Division </option>
+    <option value="Select"> Bangalore </option>
+    <option value="Select"> Channai </option>      
+</select><br><br>
+
+<label> District/Region/Zone:</label>
+<select name="Disrict" style="margin-left:110px ;" required> 
+    <option> Select District</option>
+    <option> Bangalore</option>
+    <option> Chikapallapura</option>
+
+</select>
+
+<label style="margin-left: 302px;"> Pin Code:</label>
+<input type="pin" name="pincode" pattern="[0-9]{6}"  maxlength="6"  title="Please Enter Number Only" style="margin-left:220px;" required> <br><br>
+<label> Nearest Landmark:</label>
+<input type="text" name="landmark" style="margin-left: 124px;" pattern="[A-Za-z]{25}" required>
+<label style="margin-left: 240px;">Village:</label>
+<select name="village" style="margin-left:233px ;">
+<option> --Select Village--</option>
+<option> Bagepalli</option>
+<option> Chelur</option>
+
+</select>
+
+</fieldset>
+
+    </div><br> <br>
+    
+        
+        <input type="submit" name="submit" value="Submit" style="margin-left: 45%;">
+        <input type="Reset" nave="reset" value="Reset" style="margin-left: 20px;">
+    
+</form>
+
+
+    
+</body>
+
+
+</html>

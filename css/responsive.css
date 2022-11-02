@@ -1,0 +1,37 @@
+.div1{
+    height: 200px;
+    width: 400px;
+    color: aqua;
+    background-image: linear-gradient(red, yellow, green);
+    color: black;
+    text-align: justify;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    box-shadow: 10px 10px 10px  white;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+
+
+@media screen and (min-width:300px) {
+    body{
+        background-image: linear-gradient(orange, white, green);
+    }
+}
+
+
+@media screen and (min-width:600px) {
+    body{
+        background-image: linear-gradient(green, blue, yellow);
+    }
+}
+
+/*
+@media screen and (min-width:300px) {
+    body{
+        background-image: linear-gradient(orange, white, green);
+    }
+}  */
+

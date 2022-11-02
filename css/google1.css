@@ -1,0 +1,185 @@
+.list_class{
+    list-style-type:none;
+    position: fixed;
+    right: 15px;
+   
+
+}
+/*
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+} */
+
+li{
+    float: left;
+    margin-left: 20px;
+}
+
+#icon_id{
+    margin-left: 20px;
+    
+}
+
+#icon_id:hover{
+    border: 10px solid rgb(201, 193, 193);
+    border-radius: 30px;
+    background-color:rgb(201, 193, 193) ;
+}
+
+#icon_user_id:hover{
+    border: 10px solid rgb(201, 193, 193);
+    border-radius: 30px;
+    background-color:rgb(201, 193, 193) ;
+    
+}
+
+a{
+    color: blue;
+    text-decoration: none;
+}
+
+#gmail_id:hover{
+    text-decoration: underline;
+}
+
+#image_id:hover{
+text-decoration: underline;
+}
+
+p{
+    float: left;
+    
+
+}
+
+.div_1{
+    margin-left:520px;
+    
+}
+
+.div_1 #p1{
+    color: dodgerblue;
+    font-size: 100px;
+    font-family: sans-serif;
+} 
+
+.div_1 #p2{
+    color: rgb(243, 17, 17);
+    font-size: 100px;
+    font-family: sans-serif;
+} 
+
+.div_1 #p5{
+    color: rgb(243, 17, 17);
+    font-size: 100px;
+    font-family: sans-serif;
+} 
+
+.div_1 #p3{
+    color: yellow;
+    font-size: 100px;
+    font-family: sans-serif;
+} 
+
+.div_1 #p4{
+    color: rgb(9, 107, 9);
+    font-size: 100px;
+    font-family: sans-serif;
+} 
+
+.search_class{
+    width: 560px;
+    height: 50px;
+    position: fixed; top: 240px;
+    left: 30%;
+    border-radius: 25px;
+    text-indent: 50px;
+
+}
+
+.div_2 #search_id{
+    position: fixed;
+    left: 420px;
+    top: 255px;
+    font-size: 20px;
+
+}
+
+.div_2 #mic_id{
+    position: fixed;
+    left: 890px;
+    top: 255px;
+    font-size: 20px;
+
+}
+
+.div_2 #camera_id{
+    position: fixed;
+    left: 927px;
+    top: 255px;
+    font-size: 20px;
+
+}
+/*
+.div_3 #button_id{
+    position: fixed;
+    left: 450px;
+    top: 320px;
+}
+
+.div_3 #button2_id{
+    position: fixed;
+    left: 500px;
+    top: 320px;
+} */
+
+.div_3{
+    position: fixed;
+    left: 570px;
+    top: 320px;
+}
+
+.p_class{
+    font-size: 15px;
+    position: fixed;
+    
+    left: 535px;
+    top: 350px;
+
+    
+}
+
+#diwali_id:hover{
+
+    text-decoration: underline;
+    color: blue;
+     
+}
+
+.p1_class{
+    font-size: 15px;
+    position: fixed;
+    
+    left: 380px;
+    top: 400px;
+
+    
+}
+
+
+.footer_class{
+
+    background-color: rgb(235, 233, 233);
+    width: 100%;
+    min-height: 100px;
+    position: fixed;
+    bottom: 0;
+    color: rgb(143, 139, 139);
+
+
+
+}
+
+

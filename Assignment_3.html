@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title> Assignment 3</title>
+    <style>
+        h1,h3{
+
+            text-align: center;
+        }
+        form{
+            background-color: #CAF7B1;
+        }
+/* Thia is example for css comment */
+        .div_1{
+            background-color:#5AE0E0 ;
+        }
+
+        #div_11{
+            text-align: center;
+        }
+
+        .footer_1{
+            text-align: center;
+            background-color: gray;
+        }
+         
+    </style>
+</head>
+ <body>
+     <form action="POST">
+        <!-------------This is Division 1---------------->
+        <div class="div_1">
+          <h1> Form "A"</h1>
+          <h3>[See <a href=" www.google.com">Regulation 2.1.1</a>   and <a href="Tutorial_2.html">Regulation 2.1.7</a>]</h3>
+          <h3>Application for Registration under Food Safety and Standards Act, 2006</h3>
+
+         </div>
+<!-------------This is Division 2---------------->
+        <div>
+            <fieldset>
+                <legend style="color: red;"> Application Details</legend>
+
+                <div style="float: left;"  >
+                    <label> Name of Applicant / Company</label><br><br>
+                    <label> Designation:</label>
+
+                </div>
+                <!-------------This is Division 3---------------->
+                <div style="margin-left: 400px;">
+                    <input type="text" pattern="[A-Za-z]{5,50}" title="Please Enter minimum 5 and Maximun 50 letters" required> <br><br>
+                    <input type="radio"><label>Individual</label>
+                    <input type="radio"><label>Partner</label>
+                    <input type="radio"><label>Proprieter</label>
+                    <input type="radio"><label>Secretary of daily co-operative society</label>
+                    <input type="radio"><label>Other(s)</label>
+
+                </div>
+
+
+            </fieldset>
+
+<br>
+        </div>
+        
+            <fieldset>
+              <legend style="color: red;"> Kind of Business</legend>  
+                <p style="text-align: left;"> Restuarants</p>
+                <!-------------This is Division 4---------------->
+                <div style="float: left;">
+                    <input type="checkbox"><label>Permanent/Temporary Stall Holder</label> <br><br>
+                    <input type="checkbox"><label>Petty Retailer of snacks/tea shops</label> <br><br>
+                    <input type="checkbox"><label>Food stalls/arrangements in Religious gatherings, fairs etc</label> <br><br>
+                    <input type="checkbox"><label>Fish/meat/poultry shop/seller</label>
+                </div>
+<!-------------This is Division 5---------------->
+                <div style="float: left; margin-left: 60px;">
+                    <input type="checkbox"><label>Hawker (Itinerant/Mobile food vendor)</label> <br><br>
+                    <input type="checkbox"><label>Manufacturer</label> <br><br>
+                    <input type="checkbox"><label>Milk producers (who are not member of dairy co operative society)/milk vendor</label> <br><br>
+                    <input type="checkbox"><label>Other(s)</label>
+                </div>
+                <!-------------This is Division 6---------------->
+                <div style="float:left ; margin-left: 40px;">
+                    <input type="checkbox"><label>Home based canteens/dabba wallas</label> <br><br>
+                    <input type="checkbox"><label>Re Packer</label> <br><br>
+                    <input type="checkbox"><label>Dhaba</label> <br><br>
+                    <input type="checkbox"><label>Food Vending Agencies</label>
+
+                </div>
+
+            </fieldset>
+<br>
+            <fieldset>
+                <legend style="color: red;"> Address of Permises where food business is located</legend>
+<!-------------This is Division 7---------------->
+                    <div style="float: left;">
+                    <label> State:</label> <br><br>
+                    <label> Address:</label> <br><br>
+                    <label> District/Region/Zone:</label> <br><br>
+                    <label> Nearest Lamdmark:</label> <br><br>
+
+                    </div>
+<!-------------This is Division 8---------------->
+                    <div style="margin-left: 100px; float:left;">
+                        <label>Tamil Nadu</label><br><br>
+                        <textarea></textarea> <br>
+                        <select>
+                            <option value="">Select District</option>
+                            <option value="bangalore">Bangalore</option>
+                            <option value="chikaballapura">Chikapallapura</option>
+                        </select> <br><br>
+                        <input type="text" name="Landmark" value="" pattern="[A-Za-z]{5,50}">
+
+                    </div>
+<!-------------This is Division 9---------------->
+                    <div style="float: left; margin-left:150px;margin-top: 20px;">
+
+                    <label> Sub-Division/Station/Division(Railways):</label> <br><br>
+                    <label> Pin Code:</label> <br><br>
+                    <label> Village:</label> <br><br>
+                    </div>
+<!-------------This is Division 10---------------->
+                    <div style="float: left; margin-left:120px; margin-top: 25px;" >
+                        <select>
+                            <option> --Select Sub-Division--</option>
+                            <option>Chanai</option>
+                         
+                        </select><br><br>
+                        <input type="number" pattern="[0-9]{6,6}" title="Please enter 6 digit pin code"><br><br>
+                        <select>
+                            <option> --Select Village--</option>
+                            <option>Chanai</option>
+                         
+                        </select>
+
+                    
+                    </div>
+
+                    </fieldset>
+
+            </fieldset>
+        
+<br>
+<!-------------This is Division 11---------------->
+            <div  id="div_11">
+
+        <input type="submit" name="submit" value="Submit">
+        <input type="reset"  name="reset"  value="Reset" style="margin-left:10px ;">
+
+        </div>
+     </form>
+
+
+
+
+
+
+
+ </body><br><hr>
+ <footer  class="footer_1"> &COPY;&nbsp;Design by Suresha N</footer>
+</html>
