@@ -21,7 +21,7 @@ let a = 20;
     
         console.log("c is greater")
     }
-  
+ /* Swich statement*/ 
 switch (a,b,c){
     case a>b: console.log("c is also big");
     break;
