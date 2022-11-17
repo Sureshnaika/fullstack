@@ -1,8 +1,19 @@
-let fruits=['Apple','banana','mango'];
+let fruits=['Apple','banana',1,2,3,'mango','abcd'];
 console.log(fruits);
+
+
 fruits.splice(2,2,'lemon','kiwi');
+
+
+
+
 console.log(fruits);
-console.log(fruits.slice(0,3))
+/*
+console.log(fruits.slice(0,3))*/
+
+
+
+/*
 fruits.push("grapes");
 console.log(fruits);
 fruits.pop();
@@ -17,3 +28,4 @@ console.log(array1);
 console.log(array1.sort());
 console.log(array1.reverse());
 
+*/
