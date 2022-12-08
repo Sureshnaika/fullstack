@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Window Object</h1>
+<h2>The sessionStorage Object</h2>
+
+<p>Person Name is:</p>
+<p id="demo"></p>
+<p id="demo1"></p>
+<P id="demo2"></P>
+
+<script>
+sessionStorage.setItem("first_name", "suresh");
+sessionStorage.setItem("last_name","Naik");
+let personName = sessionStorage.getItem("last_name");
+document.getElementById("demo").innerHTML = personName;
+
+sessionStorage.removeItem("last_name");
+let personName1 = sessionStorage.getItem("first_name","last_name");
+document.getElementById("demo1").innerHTML = personName1;
+
+let clear_of_session=sessionStorage.clear();
+document.getElementById("demo2").innerHTML = clear_of_session;
+
+</script>
+
+</body>
+</html>

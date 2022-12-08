@@ -3,7 +3,7 @@ arr1.forEach(i => console.log(i))
 
 let y=arr1.map(i => console.log(i))
 
-let x=arr1.filter(i =>i>=3)
+let x=arr1.filter(i =>i>=3)   
 console.log(x)
 
 let arr2=[1,2,3,4,5]
