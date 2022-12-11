@@ -21,24 +21,49 @@ function test(){
     let emlg = localStorage.getItem("em",em)
 
 
-    if (frst==fg && lst==lg && phn==pg && ps==pssg && em==emlg)
-    {
-        alert("Login successfull")
-    }
+    // if (frst==fg && lst==lg && phn==pg && ps==pssg && em==emlg)
+    // {
+    //     alert("Login successfull")
+    // }
 
-    else
-    {
-        alert("invalid credential")
-    }
+    // else
+    // {
+    //     alert("invalid credential")
+    // }
 
     let domo=document.getElementById("demo")
     demo.innerHTML=`
-    ${fg}
+   <table class="border border-5">
+           <tr>  <td> ${fg}  </td></tr>  
+             <tr>  <td> ${lg}  </td></tr>
+             <tr>   <td> ${pg}  </td></tr>
+             <tr>  <td> ${pssg}  </td></tr>
+             <tr>   <td> ${emlg}  </td></tr>
+    </table>
+
+    
     
     `
     document.getElementById("firstname").value="";
+    document.getElementById("lastname").value="";
+   document.getElementById("phone").value="";
+    document.getElementById("password").value="";
+    document.getElementById("email").value="";
 
 }
+
+ 
+    function new_edit() {
+        var parseAmount2 = localStorage.getItem("frst");
+        document.getElementById("firstname").value =(parseAmount2);
+      }
+
+
+      function Delete(){
+        localStorage.clear()
+      }
+    
+ 
 
 
 
