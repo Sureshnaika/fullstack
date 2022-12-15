@@ -60,8 +60,11 @@ function test(){
 
 
       function Delete(){
-        localStorage.clear()
+        //localStorage.clear()
+        
+
       }
+      
     
  
 

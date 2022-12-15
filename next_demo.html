@@ -1,0 +1,169 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title>demo</title>
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" 
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" 
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" 
+        crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+
+
+<div id="outer">
+
+    <div id="inner">
+
+        <div class="bg-secondary" id="div1">
+                div1
+        </div>
+
+
+      <div class="bg-primary" id="div2">
+div2
+          </div>
+
+
+
+
+        <div class="bg-primary" id="div3">
+div3
+        </div>
+
+
+
+
+        <div class="bg-warning" id="div4">
+            div4
+        </div>
+
+
+
+        <div class="bg-warning" id="div5">
+            div5
+        </div>
+    </div>    
+</div> 
+
+        <script src="javascript/next_demo_js.js"></script>
+
+        <footer class=" fixed-bottom container">
+            <button class="btn btn-primary ms-5" >Pre</button>
+            <button class="btn btn-primary float-end me-5" onclick="next_btn()">Next</button>
+            </footer>
+        
+    </body>
+</html> -->
+
+
+<html>
+    <head>
+
+        <title>
+            asdfsf
+        </title>
+
+
+        <style>
+
+.featured, .featured2 {
+  float: left;
+  margin-left: 16%;
+  margin-top: 4%;
+  width: 980px;
+  height: 450px;
+  background-color: #CFD0CD;
+
+}
+.featured img, .featured2 img {
+  width: 230px;
+  height: 360px;
+  margin-top:4%;
+  margin-left: 5%;
+  float: left;
+
+}
+.featured p, .featured2 p{
+  float: right;
+  margin-top: 5%;
+  margin-bottom: 0%;
+  margin-right: 51%;
+  width: 18%;
+  
+  font-size: 20px;
+  font-family:'poppins';
+  text-align: left;
+
+}
+.featured span, .featured2 span {
+  float: right;
+  margin-top: 0%;
+  margin-right: 4%;
+  width: 65%;
+
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+
+    height: 75%;
+  text-align: left;
+  word-wrap: break-word;
+  word-break:normal;
+  line-height: 30px;
+  white-space: inherit;
+
+}
+
+#wrapper div:not(.active) {
+  display: none;
+}
+
+.slide-btn {
+    color: #000000;
+    float: right;
+    font-size: 19px;
+    border: 3px solid #000000;
+    padding: 5px 50px;
+    margin-right: 0%;
+    margin-top: 0%;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transform: scale(1.0);
+    transition: ease-in-out 0.5s;
+
+  }
+  .slide-btn:hover {
+    transform: scale(0.9);
+    transition: ease-in-out 0.5s;
+  }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <input class="slide-btn" id="previous" type="button" value="previous"/>
+            <input class="slide-btn" id="next" type="button" value="next"/>
+            <div class="featured slide-item active">
+              <img src="Images/c.JPG" alt="" srcset="">
+              <p>ALLURED BY YOU</p>
+              <span>Lorem text part 1</span>
+            </div>
+            <div class="featured2 slide-item">
+              <img src="Images/bca.JPG" alt="" srcset="">
+              <p>Rebecca Frost</p>
+              <span>Lorem text part 2</span>
+            </div>  
+          </div>
+
+
+          <script src="javascript/next_demo_js.js"></script>
+    </body>
+</html>
+
+
