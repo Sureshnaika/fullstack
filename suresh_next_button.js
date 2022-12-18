@@ -5,6 +5,10 @@ d2.style.display="block"
 let d3=document.getElementById('div3')
 d3.style.display="none"
 
+
+
+
+
 let  clicks = 0;
 let negativ =0;
 
@@ -17,10 +21,6 @@ function next_btn(inp)
       clicks += 1;
      
 
-      
-
-
-  
     if (clicks==2){
       d1.style.display='block'
       d3.style.display='none'
@@ -33,10 +33,6 @@ function next_btn(inp)
 
   
 }
-
-
-
-
 
 
 
@@ -60,7 +56,6 @@ function pre_btn(inp)
 
       }
 }
-
 
 
 
