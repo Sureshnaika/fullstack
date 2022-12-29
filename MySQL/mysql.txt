@@ -1,0 +1,46 @@
+create table customer(customerid int not null,customername varchar(255));
+
+create table order (orderid int not null, orderdate int);
+
+create table order (orderid int not null,
+     orderdate varchar(255));
+
+
+create table `order`
+   (
+    Id int,
+   Price int
+   );
+
+insert into orders values
+(2,28122022,102),
+(3,29122022,103),
+(4,30122022,104)
+;
+
+SELECT Orders.OrderID, Customer.CustomerName, Orders.OrderDate
+FROM Orders
+INNER JOIN Customer
+ON orders.customerid=customer.customerid;                         //it will show only 3 data
+
+
+SELECT Orders.OrderID, Customer.CustomerName, Orders.OrderDate
+     FROM Orders
+     INNER JOIN Customer;                                  // this will show 3 duplicate data             
+ 
+
+
+SELECT Orders.OrderID, Customer.CustomerName, Orders.OrderDate
+FROM Orders
+left JOIN Customer
+ON orders.customerid=customer.customerid;
+
+SELECT Orders.OrderID, Customer.CustomerName, Orders.OrderDate
+FROM Orders
+right JOIN Customer
+ON orders.customerid=customer.customerid;
+
+SELECT Orders.OrderID, Customer.CustomerName, Orders.OrderDate
+FROM Orders
+left JOIN Customer
+ON orders.customerid=customer.customerid;

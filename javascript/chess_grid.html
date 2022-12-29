@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Chess board</title>
+	<style>
+		body {
+			text-align: center;
+		}
+		.cell {
+			height: 30px;
+			width: 30px;
+			border: 1.5px solid grey;
+			border-style: inset;
+		}
+		.blackcell {
+			background-color: black;
+		}
+
+		.whitecell {
+			background-color: white;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		var center = document.createElement('center');
+        let count=0;
+		var ChessTable = document.createElement('table');
+		for (var i = 0; i < 8; i++) {
+			count = count;
+			var tr = document.createElement('tr');
+			for (var j = 0; j < 8; j++) {
+                count = count +1;
+				var td = document.createElement('td');
+				
+                var btn=document.createElement('button');
+			    var myID = document.createElement("count");
+				if ((i + j) % 2 == 0) { 
+					td.setAttribute('class', 'cell whitecell');
+					      tr.appendChild(td);
+                         td.innerHTML = count;
+                          td.setAttribute("id", count)
+						 td.setAttribute("onclick", "editUnit(this.id)");
+						//   function alert(td) {
+						// 	 td.innerHTML = count;
+						//   }
+                        //   btn.innerHTML=count;        
+				}
+				else {
+					td.setAttribute('class', 'cell blackcell');
+                    tr.appendChild(td);
+                    td.innerHTML = count;
+                    td.setAttribute("id", count)
+                   // btn.innerHTML=count;
+                    btn.setAttribute("id", count)
+					td.setAttribute("onclick", "editUnit(this.id)");
+					// function alert(td) {
+					// 	td.innerHTML = count;
+					// 	  }
+                    // td.onclick = function()
+					// {editUnit(td) };
+					
+   
+				}
+				
+               
+			}
+			//td.setAttribute("onclick", "alert(count)");
+			ChessTable.appendChild(tr);    
+		}
+		center.appendChild(ChessTable);
+		ChessTable.setAttribute('cellspacing', '0');
+		ChessTable.setAttribute('width', '600px');
+		ChessTable.setAttribute('height', '600px');
+		document.body.appendChild(center);
+
+
+         function editUnit(id) {
+			var tdElem = document.getElementById (id);
+			var tdText = tdElem.innerHTML ;
+           
+             window.alert(tdText)
+         }
+
+        
+        // var rowCount = document.getElementById("myTable").rows.length;
+        // document.getElementById("count").innerHTML = "ROW COUNT: " + rowCount;
+	</script>
+  
+</body>
+
+</html>
