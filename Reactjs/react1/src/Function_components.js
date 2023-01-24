@@ -2,12 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import userImage from './Images/suresh.jpg';
 
-
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
-
-
 
 let person = 'Suresha N'
 
@@ -15,8 +10,6 @@ let headerStyle = {
         width: '100%',
         background: '#ff0000',
         height: '100px',
-
-
 }
 
 const Candidate = () =>(
@@ -62,12 +55,6 @@ const Footer = () =>(
         <h4>This is footer</h4>
     </div>
 )
-
-
-
-
-
-
 
 const App = () => (
 <div>

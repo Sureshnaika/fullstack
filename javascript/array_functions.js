@@ -1,5 +1,5 @@
 let arr1=[1,2,3,4,'apple','banana']
-arr1.forEach(i => console.log(i))
+arr1.forEach(arr1 => console.log(arr1))
 
 let y=arr1.map(i => console.log(i))
 

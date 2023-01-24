@@ -61,6 +61,4 @@ let html_data=''
 
    }
 
-product_div.innerHTML=` ${html_data}
-
-`;
+product_div.innerHTML=` ${html_data}`;

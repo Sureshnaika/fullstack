@@ -2,15 +2,15 @@ let fruits=['Apple','banana',1,2,3,'mango','abcd'];
 console.log(fruits);
 
 
-fruits.splice(2,2,'lemon','kiwi');
+//fruits.splice(2,3,'lemon','kiwi');
 
 
 
 
+
+
+console.log(fruits.slice(0,3))
 console.log(fruits);
-/*
-console.log(fruits.slice(0,3))*/
-
 
 
 /*

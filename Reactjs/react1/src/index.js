@@ -1,43 +1,78 @@
-import React , {createContext, useContext} from 'react';
+import React , {useReducer} from 'react';
 import ReactDOM from 'react-dom/client';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-let uSC = createContext()
-
-let C1 = () =>
+let initialTasks = [
     {
-        const student = 'Suresh'
-        return (
-            <uSC.Provider value={student}>
-                <h1>This {student} first component</h1>
-               {/*<C2 student={student}/>*/} 
-               <C2 student={'Ramesh'}/>
-            </uSC.Provider>
-               ) 
+        id:1,
+        title:'Attend meeting',
+        complete: false
+    },
+    {
+        id:2,
+        title:'Analyse the requirement',
+        complete: false
+    },
+    {
+        id:3,
+        title:'Create Bioler Plate',
+        complete: false
     }
- 
-    let C2 = (props) =>
+]
+
+let reducer = (state,action) =>{
+    console.log(action.type)
+switch(action.type){
+    case 'COMPLETE':
+    return state.map((task) =>
     {
+        if (task.id === action.id)
+        {
+            return {...task, coplete: !task.complete}
+        }
+        else
+        {
+            return task
+        }
+    
+    })
+    default:
+        {
+            return state
+        }
+}
+}
+
+
+let C1 = () => 
+     {  
+        const [tasks,dispatch] = useReducer(reducer,initialTasks)
         
-        return ( 
-                <div>
-                     <h1>This {props.student}, second component</h1>
-                    {/* <C3 student={props.student}/>*/}
-                    <C3/>
-                </div>
-               )
-    }
+        let changeTheStatus = (task) =>{
+            dispatch({id:task.id, type:'COMPLETE'})
+        }
+        return( 
+           
+            <div>
+                {
+                    tasks.map( (task) => 
+                    (
 
-    let C3 = () =>
-    {
-        let st = useContext(uSC)
-        return ( 
-                <h1>This {st}, Third component</h1>
-                
-               )
-    }
-
+                        <div key={task.id}>
+                        <label>
+                        <input type='checkbox' 
+                        checked={task.complete} 
+                        onChange={()=> changeTheStatus(task)}/>
+                       &nbsp; {task.title}
+                        </label>
+                        </div>  
+                    )
+                   ) }
+            </div>
+        )
+      }
+ 
 root.render(<C1/>); 
 
